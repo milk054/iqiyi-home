@@ -1,0 +1,1100 @@
+/* 预初始化 */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+    float: left;
+}
+
+.layer{
+    margin: 0 auto;
+}
+
+.fl{
+    float: left;
+}
+
+/* 导航栏 */
+
+.nav{
+    width: 100%;
+    height: 64px;
+    background-color: #232325;
+}
+
+.nav h1{
+    display: inline-block;
+    margin-top: 7px;
+    margin-left: -3px;
+}
+
+.nav .nav2{
+    position: relative;
+    width: 1285px;
+    height: 58px;
+}
+
+.nav form{
+    position: absolute;
+    top: 11px;
+    left: 433px;
+}
+
+.nav form input{
+    width: 244px;
+    height: 20px;
+    padding: 11px 0;
+    border: none;
+    border-radius: 21px 0 0 21px;
+    background-color: #333;
+    text-indent: 17px;
+    font-size: 16px;
+    color: #999;
+    font-family: Microsoft Yahei;
+    line-height: 20px;
+    float: left;
+    outline: none;
+}
+
+
+.nav form a{
+    display: inline-block;
+    width: 80px;
+    height: 42px;
+    background-color: #333;
+    color: #666;
+    font-size: 14px;
+    text-indent: 28px;
+    line-height: 42px;
+}
+
+.nav form a:hover{
+    color: #00be06;
+}
+
+.nav form .btn{
+    width: 96px;
+    height: 42px;
+    background-color: #00be06;
+    border: 0;
+    float: right;
+    border-radius: 0 21px 21px 0;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    line-height: 42px;
+    cursor: pointer;
+}
+
+/* 导航栏 > 右侧小菜单 */
+
+.nav .r-side-nav{
+    width: 302px;
+    height: 45px;
+    position: absolute;
+    top: 13px;
+    right: 0;
+}
+
+/* 导航栏 > 右侧导航栏 > 第一个菜单按钮 */
+
+.nav .r-side-nav .select1{
+    font-size: 0;
+}
+
+.nav .r-side-nav .select1:hover .triangle,
+.nav .r-side-nav .select1:hover .menu{
+    display: inline-block;
+}
+
+.nav .r-side-nav .vip-box{
+    display: inline-block;
+    width: 22px;
+    height: 44px;
+    margin-top: 1px;
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    left: 0;
+}
+
+.nav .r-side-nav .vip-box .img{
+    width: 22px;
+    height: 18px;
+    background: url(../images/vip.png) -210px 45px;
+}
+
+.nav .r-side-nav .vip-box span{
+    display: inline-block;
+    width: 22px;
+    height: 24px;
+    font-size: 13px;
+    color: #dab176;
+    text-align: center;
+    line-height: 25px;
+}
+
+.nav .r-side-nav .select1 .triangle{
+    display: none;
+    width: 0;
+    height: 0;
+    border: 7px solid #fff;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    position: absolute;
+    top: 38px;
+    left: 5px;
+}
+
+.nav .r-side-nav .select1 .menu{
+    z-index: 1;
+    display: none;
+    width: 200px;
+    height: 149px;
+    padding: 13px 0 9px 0;
+    position: absolute;
+    top: 51px;
+    left: -88px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.nav .r-side-nav .select1 .menu .content{
+    width: 146px;
+    height: 36px;
+    padding: 0 27px;
+    margin-bottom: 3px;
+    text-align: center;
+    line-height: 36px;
+    color: #222;
+}
+
+.nav .r-side-nav .select1 .menu .content:hover{
+    background-color: #f5f5f5;
+    color: #c8a06a;
+}
+
+.nav .r-side-nav .select1 .menu div.content3{
+    margin-left: -4px;
+}
+
+.nav .r-side-nav .select1 .menu .content span{
+    font-size: 14px;
+    vertical-align: 7px;
+}
+
+.nav .r-side-nav .select1 .menu .content i{
+    display: inline-block;
+    width: 24px;
+    height: 22px;
+    margin: 0 8px 0 0;
+}
+
+.nav .r-side-nav .select1 .menu .content .sprite1{
+    background: url(../images/menu.png) 0px -660px;
+}
+
+.nav .r-side-nav .select1 .menu .content .sprite2{
+    background: url(../images/menu.png) -29px -660px;
+}
+
+.nav .r-side-nav .select1 .menu .content .sprite3{
+    background: url(../images/menu.png) -59px -660px;
+}
+
+.nav .r-side-nav .select1 .menu .login{
+    text-align: center;
+    padding-top: 8px;
+}
+
+.nav .r-side-nav .select1 .menu .login a{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    padding: 0 15px;
+    background-color: #c8a06a;
+    font-size: 12px;
+    border-radius: 13px;
+    text-align: center;
+    line-height: 24px;
+    color: #fff;
+}
+
+.nav .r-side-nav .select1 .menu .login a:hover{
+    background-color: #e2bc81;
+
+}
+
+/* 引入iconfont */
+
+@font-face{
+    font-family: 'iconfont';
+    src: url('../iconfont/iconfont.eot');
+    src: url('../iconfont/iconfont.eot?#iefix') format('embedded-opentype'),
+         url('../iconfont/iconfont.woff2') format('woff2'),
+         url('../iconfont/iconfont.woff') format('woff'),
+         url('../iconfont/iconfont.ttf') format('truetype'),
+         url('../iconfont/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont{
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* 导航栏 > 右侧导航栏 > 第二个菜单按钮 */
+
+.nav .r-side-nav .select2 .upload{
+    width: 26px;
+    height: 45px;
+    position: absolute;
+    top: 0;
+    left: 47px;
+    text-align: center;
+    font-size: 0;
+    cursor: pointer;
+}
+
+.nav .r-side-nav .select2 .upload .upload-iconfont{
+    display: inline-block;
+    width: 26px;
+    height: 20px;
+    font-size: 26px;
+    color: #999;
+    line-height: 20px;
+    font-weight: 600;
+    margin-top: -1px;
+}
+
+.nav .r-side-nav .select2 .upload span{
+    display: inline-block;
+    width: 26px;
+    height: 24px;
+    font-size: 13px;
+    color: #999;
+    line-height: 23px;
+}
+
+.nav .r-side-nav .select2 .triangle{
+    display: none;
+    width: 0;
+    height: 0;
+    border: 7px solid #fff;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    position: absolute;
+    top: 38px;
+    left: 53px;
+}
+
+.nav .r-side-nav .select2 .menu{
+    z-index: 1;
+    display: none;
+    width: 146px;
+    height: 144px;
+    padding: 10px 0 10px 0;
+    position: absolute;
+    top: 51px;
+    left: -13px;
+    font-size: 0;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.nav .r-side-nav .select2 .content{
+    display: inline-block;
+    width: 117px;
+    height: 36px;
+    padding-left: 29px;
+    
+}
+
+.nav .r-side-nav .select2 .content:hover{
+    background-color: #f5f5f5;
+    color: #00be06;
+}
+
+.nav .r-side-nav .select2 .content i{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 8px 12px 0 0;
+}
+
+.nav .r-side-nav .select2 .content i.sprite1{
+    background: url(../images/menu.png) 0px 0px;
+}
+
+.nav .r-side-nav .select2 .content span{
+    display: inline-block;
+    font-size: 14px;
+    vertical-align: 6px;
+}
+
+.nav .r-side-nav .select2 .content i.sprite2{
+    background: url(../images/menu.png) 0px -90px;
+}
+
+.nav .r-side-nav .select2 .content i.sprite3{
+    background: url(../images/menu.png) -120px 0px;
+}
+
+.nav .r-side-nav .select2 .content i.sprite4{
+    background: url(../images/menu.png) 0px -60px;
+}
+
+.nav .r-side-nav .select2:hover .triangle,
+.nav .r-side-nav .select2:hover .menu{
+    display: inline-block;
+}
+
+/* 导航栏 > 右侧导航栏 > 第三个菜单按钮 */
+
+.nav .r-side-nav .select3 .client{
+    width: 39px;
+    height: 45px;
+    position: absolute;
+    top: 0;
+    left: 98px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 0;
+}
+
+.nav .r-side-nav .select3 .client i{
+    display: inline-block;
+    width: 39px;
+    height: 20px;
+    font-size: 18px;
+    color: #999;
+}
+
+.nav .r-side-nav .select3 .client span{
+    display: inline-block;
+    width: 39px;
+    height: 24px;
+    font-size: 13px;
+    color: #999;
+    text-align: center;
+    line-height: 24px;
+}
+
+.nav .r-side-nav .select3 .triangle{
+    display: none;
+    width: 0;
+    height: 0;
+    border: 7px solid #fff;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    position: absolute;
+    top: 38px;
+    left: 110px;
+}
+
+.nav .r-side-nav .select3 .menu{
+    z-index: 1;
+    display: none;
+    width: 178px;
+    height: 148px;
+    padding: 13px 0 8px 0;
+    border-radius: 5px;
+    position: absolute;
+    top: 51px;
+    left: 31px;
+    background-color: #fff;
+}
+
+.nav .r-side-nav .select3 .menu .content{
+    width: 157px;
+    height: 36px;
+    padding-left: 21px;
+    color: #222;
+}
+
+.nav .r-side-nav .select3 .menu .content:hover{
+    background-color: #f5f5f5;
+    color: #00be06;
+}
+
+.nav .r-side-nav .select3 .menu i.sprite1{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background: url(../images/menu.png) -30px 0px;
+    margin-top: 7px;
+    margin-right: 12px;
+}
+
+.nav .r-side-nav .select3 .menu span{
+    line-height: 36px;
+    font-size: 14px;
+    vertical-align: 6px;
+}
+
+.nav .r-side-nav .select3 .menu i.sprite2{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background: url(../images/menu.png) -90px 0px;
+    margin-top: 7px;
+    margin-right: 12px;
+}
+
+.nav .r-side-nav .select3 .menu i.sprite3{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background: url(../images/menu.png) -90px -30px;
+    margin-top: 7px;
+    margin-right: 12px;
+}
+
+.nav .r-side-nav .select3 .try{
+    width: 178px;
+    text-align: center;
+}
+
+.nav .r-side-nav .select3 .try a{
+    display: inline-block;
+    width: 48px;
+    height: 24px;
+    padding: 0 15px 0 15px;
+    font-size: 12px;
+    background-color: #00be06;
+    color: #fff;
+    border-radius: 13px;
+    text-align: center;
+    line-height: 24px;
+}
+
+.nav .r-side-nav .select3 .try a:hover{
+    background-color: #00b606;
+}
+
+.nav .r-side-nav .select3:hover .triangle,
+.nav .r-side-nav .select3:hover .menu{
+    display: inline-block;
+}
+
+/* 导航栏 > 右侧导航栏 > 第四个菜单按钮 */
+
+.nav .r-side-nav .select4 .inform{
+    width: 26px;
+    height: 45px;
+    position: absolute;
+    top: 0;
+    left: 162px;
+    cursor: pointer;
+    font-size: 0;
+}
+
+.nav .r-side-nav .select4 .inform i{
+    display: inline-block;
+    width: 26px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 25px;
+    color: #999;
+}
+
+.nav .r-side-nav .select4 .inform span{
+    display: inline-block;
+    width: 26px;
+    height: 24px;
+    font-size: 13px;
+    color: #999;
+    text-align: center;
+    line-height: 24px;
+}
+
+.nav .r-side-nav .select4 .triangle{
+    display: none;
+    width: 0;
+    height: 0;
+    border: 7px solid #fff;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    position: absolute;
+    top: 38px;
+    left: 168px;
+}
+
+.nav .r-side-nav .select4 .menu{
+    z-index: 1;
+    display: none;
+    width: 298px;
+    height: 384px;
+    position: absolute;
+    top: 51px;
+    left: -66px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    font-size: 0;
+    background-color: #fff;
+}
+
+.nav .r-side-nav .select4 .menu .options{
+    width: 281px;
+    height: 38px;
+    padding-left: 17px;
+    border-radius: 5px 5px 0 0;
+}
+
+.nav .r-side-nav .select4 .menu .options div{
+    display: inline-block;
+    width: 56px;
+    height: 38px;
+    margin: 0 16px 0 16px;
+    font-size: 14px;
+    color: #222;
+    text-align: center;
+    line-height: 38px;
+    cursor: pointer;
+}
+
+.nav .r-side-nav .select4 .menu .options a.color{
+    color: #00be06;
+}
+
+.nav .r-side-nav .select4 .menu .lines{
+    display: inline-block;
+    width: 298px;
+    height: 2px;
+    position: relative;
+}
+
+.nav .r-side-nav .select4 .menu .lines em{
+    display: none;
+    width: 24px;
+    height: 4px;
+    background-color: #00be06;
+    border-radius: 2px;
+    position: absolute;
+    top: -2px;
+}
+
+.nav .r-side-nav .select4 .menu .inform-list{
+    width: 298px;
+    height: 227px;
+    text-align: center;
+}
+
+.nav .r-side-nav .select4 .menu .sprite{
+    display: inline-block;
+    width: 120px;
+    height: 100px;
+    background: url(../images/menu.png) 0px -430px;
+    margin-top: 90px;
+}
+
+.nav .r-side-nav .select4 .inform-list p{
+    vertical-align: bottom;
+    margin-top: 17px;
+}
+
+.nav .r-side-nav .select4 .inform-list p a{
+    font-size: 14px;
+    color: #00be06;
+}
+
+.nav .r-side-nav .select4 .inform-list p span{
+    font-size: 14px;
+    color: #666;
+}
+
+.nav .r-side-nav .select4:hover .triangle,
+.nav .r-side-nav .select4:hover .menu{
+    display: inline-block;
+}
+
+/* 导航栏 > 右侧导航栏 > 第五个菜单按钮 */
+
+.nav .r-side-nav .select5 .watched{
+    width: 26px;
+    height: 45px;
+    position: absolute;
+    top: 0;
+    left: 213px;
+    text-align: center;
+    cursor: pointer;
+}
+.nav .r-side-nav .select5 .watched i{
+    display: block;
+    width: 26px;
+    height: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #999;
+}
+
+.nav .r-side-nav .select5 .watched p{
+    height: 25px;
+    font-size: 13px;
+    text-align: center;
+    line-height: 24px;
+    color: #999;
+}
+
+.nav .r-side-nav .select5 > .triangle{
+    display: none;
+    width: 0;
+    height: 0;
+    border: 7px solid #fff;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    position: absolute;
+    top: 38px;
+    left: 219px;
+}
+
+.nav .r-side-nav .select5 .menu{
+    z-index: 1;
+    display: none;
+    width: 300px;
+    height: 386px;
+    position: absolute;
+    top: 51px;
+    left: 2px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.nav .r-side-nav .select5 .record{
+    width: 298px;
+    height: 262px;
+    margin-left: 1px;
+    position: relative;
+
+}
+
+.nav .r-side-nav .select5 .record .short-video{
+    width: 82px;
+    height: 16px;
+    position: absolute;
+    top: 15px;
+    left: 203px;
+    font-size: 0;
+    cursor: pointer;
+}
+
+.nav .r-side-nav .select5 .record .true{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+    background: url(../images/menu.png) -60px -120px;
+}
+
+.nav .r-side-nav .select5 .record .none{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+    background: url(../images/menu.png) -30px -120px;
+}
+
+.nav .r-side-nav .select5 .record span{
+    display: inline-block;
+    height: 16px;
+    font-size: 12px;
+    color: #333;
+    vertical-align: 3px; 
+}
+
+.nav .r-side-nav .select5 .record .sprite1{
+    display: inline-block;
+    width: 120px;
+    height: 100px;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    margin-left: -60px;
+    background: url(../images/menu.png) 0px -540px;
+}
+
+.nav .r-side-nav .select5 .record p{
+    width: 225px;
+    font-size: 14px;
+    line-height: 20px;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    margin-left: -113px;
+    text-align: center;
+}
+
+.nav .r-side-nav .select5 .record p.content1{
+    bottom: 20px;
+    display: none;
+}
+
+.nav .r-side-nav .select5 .login{
+    width: 100%;
+    height: 24px;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    text-align: center;
+}
+
+.nav .r-side-nav .select5 .login a{
+    display: inline-block;
+    width: 72px;
+    height: 100%;
+    padding: 0 15px 0 15px;
+    background-color: #00be06;
+    border-radius: 13px;
+    font-size: 12px;
+    color: #fff;
+    line-height: 24px;
+}
+
+.nav .r-side-nav .select5 .login a:hover{
+    background-color: #00b606;
+}
+
+.nav .r-side-nav .select5:hover .triangle,
+.nav .r-side-nav .select5:hover .menu{
+    display: block;
+}
+
+/* 导航栏 > 右侧导航栏 > 登录的头像 */
+
+.nav .r-side-nav .select6 img.login{
+    width: 34px;
+    height: 34px;
+    padding: 2px;
+    background-color: #999;
+    position: absolute;
+    top: 0;
+    left: 264px;
+    border-radius: 50%;
+}
+
+.nav .r-side-nav .select6 .triangle{
+    display: none;
+    width: 0;
+    height: 0;
+    border: 7px solid #fff;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    position: absolute;
+    top: 38px;
+    left: 276px;
+}
+
+.nav .r-side-nav .select6 .menu{
+    z-index: 1;
+    display: none;
+    width: 188px;
+    height: 209px;
+    position: absolute;
+    top: 51px;
+    left: 114px;
+    border-radius: 5px;
+    font-size: 0;
+    background-color: #fff;
+}
+
+.nav .r-side-nav .select6 .menu p{
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+    margin: 15px 0 10px 0;
+}
+
+.nav .r-side-nav .select6 .menu .content{
+    display: inline-block;
+    width: 157px;
+    height: 36px;
+    padding-left: 29px;
+    margin-bottom: 3px;
+    font-size: 14px;
+    color: #222;
+    text-overflow: ellipsis;
+}
+
+.nav .r-side-nav .select6 .menu .content:hover{
+    background-color: #f5f5f5;
+    color: #00be06;
+}
+
+.nav .r-side-nav .select6 .menu .sprite{
+    display: inline-block;
+    width: 18px;
+    height: 20px;
+    margin-top: 8px;
+    margin-right: 12px;
+    background: url(../images/menu.png) 0px -690px;
+}
+
+.nav .r-side-nav .select6 .menu span{
+    vertical-align: 5px;
+    font-size: 14px;
+}
+
+.nav .r-side-nav .select6 .menu .sprite1{
+    display: inline-block;
+    width: 18px;
+    height: 20px;
+    margin-top: 8px;
+    margin-right: 12px;
+    background: url(../images/menu.png) -30px -690px;
+}
+
+.nav .r-side-nav .select6 .menu .sprite2{
+    display: inline-block;
+    width: 18px;
+    height: 20px;
+    margin-top: 8px;
+    margin-right: 12px;
+    background: url(../images/menu.png) -60px -690px;
+}
+
+.nav .r-side-nav .select6 .login-register{
+    width: 100%;
+    height: 24px;
+    margin: 13px 0 10px 0;
+    text-align: center;
+}
+
+.nav .r-side-nav .select6 .login-register a{
+    display: inline-block;
+    width: 24px;
+    height: 22px;
+    padding: 0 13px;
+    margin: 0 10px;
+    border-radius: 13px;
+    border: 1px solid #00be06;
+    text-align: center;
+    line-height: 22px;
+    font-size: 12px;
+
+}
+
+.nav .r-side-nav .select6 .login-register .login{
+    background-color: #00be06;
+    color: #fff;
+}
+
+.nav .r-side-nav .select6 .login-register .register{
+    background-color: #fff;
+    color: #00be06;
+}
+
+.nav .r-side-nav .select6 .login-register .register:hover{
+    background-color: #00be06;
+    color: #fff;
+}
+
+.nav .r-side-nav .select6:hover .triangle,
+.nav .r-side-nav .select6:hover .menu{
+    display: inline-block;
+}
+
+/* 轮播图 */
+
+.rotation-chart{
+    width: 100%;
+    height: 520px;
+    background-color: #666;
+    position: relative;
+    font-size: 0;
+    overflow: hidden;
+}
+
+.rotation-chart img{
+    margin-left: -176px;
+}
+
+.rotation-chart .side-list{
+    width: 276px;
+    height: 406px;
+    padding: 14px 0 12px;
+    background: rgb(0,0,0,.7);
+    position: absolute;
+    top: 0;
+    right: 32px;
+    font-size: 0;
+}
+
+.rotation-chart .side-list li{
+    width: 236px;
+    height: 18px;
+    padding: 9px 20px;
+    margin-bottom: 1px;
+    line-height: 18px;
+    font-size: 16px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.rotation-chart .side-list li span{
+    color: #ddd;
+}
+
+.rotation-chart .side-list .selected{
+    width: 236px;
+    height: 54px;
+    padding: 10px 20px;
+    margin: -1px 0 0;
+    color: #00be06;
+    background: rgba(0,0,0,.5)
+}
+
+.rotation-chart .side-list .selected .content1{
+    display: block;
+    font-size: 24px;
+    line-height: 26px;
+    color: #00be06;
+    margin-bottom: 10px;
+}
+
+.rotation-chart .side-list .selected .content2{
+    display: none;
+}
+
+.rotation-chart .side-list .selected .content3{
+    color: #00be06;
+}
+
+/* 轮播图 > 底部分类区 */
+
+.rotation-chart .classfiy{
+    width: 100%;
+    height: 88px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(27,27,28,.96);
+}
+
+.rotation-chart .classfiy1{
+    width: 1285px;
+    height: 62px;
+    margin-left: 32px;
+    margin-top: 16px;
+    font-size: 0;
+}
+
+.rotation-chart .classfiy1 .item0{
+    width: 228px;
+    height: 62px;
+    margin-right: 5px;
+}
+
+.rotation-chart .classfiy1 .item1{
+    width: 172px;
+    height: 62px;
+    margin-left: 20px;
+    margin-right: 5px;
+}
+
+.rotation-chart .classfiy1 .item2{
+    width: 315px;
+    height: 62px;
+    margin-left: 20px;
+    margin-right: 5px;
+}
+
+.rotation-chart .classfiy1 .item3{
+    width: 384px;
+    height: 62px;
+    margin-left: 20px;
+    margin-right: 5px;
+}
+
+.rotation-chart .classfiy1 .item4{
+    width: 56px;
+    height: 62px;
+    margin-left: 25px;
+}
+
+.rotation-chart .classfiy1 .item0 .nav-list,
+.rotation-chart .classfiy1 .item1 .nav-list,
+.rotation-chart .classfiy1 .item2 .nav-list,
+.rotation-chart .classfiy1 .item3 .nav-list{
+    display: inline-block;
+    height: 62px;
+    margin-right: 15px;
+}
+
+.rotation-chart .classfiy1 .item0 .nav-list .content,
+.rotation-chart .classfiy1 .item1 .nav-list .content,
+.rotation-chart .classfiy1 .item2 .nav-list .content,
+.rotation-chart .classfiy1 .item3 .nav-list .content{
+    height: 18px;
+    padding: 3px 0 3px;
+    margin-bottom: 7px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.rotation-chart .classfiy1 .item0 .nav-list .content a,
+.rotation-chart .classfiy1 .item1 .nav-list .content a,
+.rotation-chart .classfiy1 .item2 .nav-list .content a,
+.rotation-chart .classfiy1 .item3 .nav-list .content a{
+    color: #ccc;
+}
+
+.rotation-chart .classfiy1 .item0 .nav-list .content a:hover,
+.rotation-chart .classfiy1 .item1 .nav-list .content a:hover,
+.rotation-chart .classfiy1 .item2 .nav-list .content a:hover,
+.rotation-chart .classfiy1 .item3 .nav-list .content a:hover{
+    color: #00be06;
+    transition: color .3s;
+}
+
+.rotation-chart .classfiy1 .item0::after,
+.rotation-chart .classfiy1 .item1::after,
+.rotation-chart .classfiy1 .item2::after,
+.rotation-chart .classfiy1 .item3::after{
+    content: '';
+    display: block;
+    width: 1px;
+    height: 62px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: -5px;
+    background: linear-gradient(rgba(27,27,28,.96),#fff,rgba(27,27,28,.96));
+}
+
+.rotation-chart .classfiy1 .item4 .vip-jx{
+    width: 34px;
+    height: 28px;
+    margin-top: 3px;
+    margin-left: 11px;
+    background: url(../images/vip_jx.png) no-repeat;
+    background-size: cover;
+}
+
+.rotation-chart .classfiy1 .item4 p{
+    font-size: 14px;
+    color: #e2bc81;
+    margin-top: 6px;
+    text-align: center;
+}
